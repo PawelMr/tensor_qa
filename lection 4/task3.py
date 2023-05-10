@@ -6,10 +6,13 @@
 # 999 --> 27
 # 4 --> 4
 
-def sum_digits(num):
-    list_digits = []
-    for i in str(num):
-        list_digits.append(int(i))
+def sum_digits(num: int):
+    """
+    Вычисление суммы цифр
+    :param num: число
+    :return: сумма цифр
+    """
+    list_digits = [int(i) for i in str(num)]
     our_sum = sum(list_digits)
     return our_sum
 

@@ -13,7 +13,16 @@
 # [1,4] => 5 вышел
 # [4] => 1 вышел, 4 остался последним т.е. выжившим - это наш ответ survivor.
 
-def josephus_task(num_people, kill_num):
+def josephus_task(num_people: int, kill_num: int):
+    """
+    Решение Задачи Иосифа Флавия
+    Задача заключается в следующем: по кругу стоит num_people воинов,
+    начиная с первого воина они выводят из круга каждого kill_num по счёту.
+    Вернуть последний элемент списка.
+    :param num_people: количество элементов
+    :param kill_num: номер удаляемых элементов
+    :return: последний оставшийся элемент
+    """
     if num_people <= 0 and kill_num <= 1:
         return "Некорректные входные данные!"
     list_people = [i for i in range(1, num_people + 1)]

@@ -5,8 +5,12 @@
 # [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]] -->  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-def flatten_and_sort(array):
-    # Здесь нужно написать код
+def flatten_and_sort(array: list):
+    """
+    Преобразует двумерый массив (список списков) в "плоский" список
+    :param array: двумерый массив (список списков)
+    :return: "плоский" список
+    """
     result_list = []
     for i in array:
         result_list.extend(i)

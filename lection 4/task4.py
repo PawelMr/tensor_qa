@@ -21,7 +21,13 @@ import math
 #         count_multy += 1
 #     return count_multy
 
-def multiplication_chain(num):
+def multiplication_chain(num: int):
+    """
+    Напишите функцию multiplication_chain, которая принимает положительное число num,
+    и возвращает количество раз count_multy, которое вы должны перемножить цифры числа num и полученных произведений,
+    :param num: число
+    :return: количество умножений
+    """
     count_multy = 0
     while len(str(num)) > 1:
         num = math.prod([int(i) for i in str(num)])

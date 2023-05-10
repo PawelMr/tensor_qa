@@ -16,8 +16,12 @@ import re
 #     return str_phone
 
 
-def create_phone_number(num_tuple):
-
+def create_phone_number(num_tuple: tuple):
+    """
+    Форматирование кортежа в строку - номер телефона
+    :param num_tuple: кортеж цифр
+    :return: строка вида "(123) 456-7890"
+    """
     list_num_tuple = [str(i) for i in num_tuple]
     str_phone = re.sub(r'(\d{3})(\d{3})(\d{4})', r'(\1) \2-\3', ''.join(list_num_tuple))
     return str_phone

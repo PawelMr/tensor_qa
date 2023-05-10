@@ -3,6 +3,11 @@
 # [1, 0, 1, 2, 0, 1, 3]  => [1, 1, 2, 1, 3, 0, 0]
 
 def move_zeros(lst):
+    """
+    все нули в исходном списке перемещаются в конец списка
+    :param lst: исходный список
+    :return: преобразованный список
+    """
     if 0 in lst:
         new_list_zero = [i for i in lst if i == 0]
         new_list_not_zero = [i for i in lst if i != 0]
