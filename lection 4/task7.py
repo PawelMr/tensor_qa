@@ -9,8 +9,8 @@ def move_zeros(lst):
     :return: преобразованный список
     """
     if 0 in lst:
-        new_list_zero = [i for i in lst if i == 0]
-        new_list_not_zero = [i for i in lst if i != 0]
+        new_list_zero = [j for j in lst if j == 0]
+        new_list_not_zero = [j for j in lst if j != 0]
         lst = new_list_not_zero + new_list_zero
     return lst
 

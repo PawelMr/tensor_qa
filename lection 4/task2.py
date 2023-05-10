@@ -12,8 +12,8 @@ def flatten_and_sort(array: list):
     :return: "плоский" список
     """
     result_list = []
-    for i in array:
-        result_list.extend(i)
+    for j in array:
+        result_list.extend(j)
     result_list.sort()
     return result_list
 

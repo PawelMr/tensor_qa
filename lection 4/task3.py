@@ -12,7 +12,7 @@ def sum_digits(num: int):
     :param num: число
     :return: сумма цифр
     """
-    list_digits = [int(i) for i in str(num)]
+    list_digits = [int(j) for j in str(num)]
     our_sum = sum(list_digits)
     return our_sum
 

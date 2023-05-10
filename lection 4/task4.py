@@ -30,7 +30,7 @@ def multiplication_chain(num: int):
     """
     count_multy = 0
     while len(str(num)) > 1:
-        num = math.prod([int(i) for i in str(num)])
+        num = math.prod([int(j) for j in str(num)])
         count_multy += 1
     return count_multy
 

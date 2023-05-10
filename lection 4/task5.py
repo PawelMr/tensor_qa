@@ -25,7 +25,7 @@ def josephus_task(num_people: int, kill_num: int):
     """
     if num_people <= 0 and kill_num <= 1:
         return "Некорректные входные данные!"
-    list_people = [i for i in range(1, num_people + 1)]
+    list_people = [j for j in range(1, num_people + 1)]
     while len(list_people) > 1:
         kill_index = kill_num-1 if kill_num <= len(list_people) else kill_num % len(list_people)-1
         if kill_index != - 1:

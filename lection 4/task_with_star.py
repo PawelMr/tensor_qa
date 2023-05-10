@@ -24,14 +24,14 @@ def max_division_by_3(num):
     :return: полученное число
     """
     list_new_num = []
-    list_old_digits = [int(i) for i in str(num)]
+    list_old_digits = [int(j) for j in str(num)]
     # перебираю все разряды числа с лева направо через индексы списка из цифр числа
     for index in range(len(list_old_digits)):
         # всего скорее start_digits всегда может быть ноль так как мы ищем максимальная а не минимальное значение,
         # но если у первого индекса зануляем цифру в выборку попадут значения меньшего разряда
         start_digits = 0 if index != 0 else 1
         # составляю возможные варианты цифр для данного индекса
-        new_list_digits = [i for i in range(start_digits, 10) if i != list_old_digits[index]]
+        new_list_digits = [j for j in range(start_digits, 10) if j != list_old_digits[index]]
         # копия списка начальных цифр что бы не затереть их
         changeable_copy_list_old_digits = copy.copy(list_old_digits)
         # перебор вариантов замены цифры с индексом
@@ -39,7 +39,7 @@ def max_division_by_3(num):
             changeable_copy_list_old_digits[index] = digits
             # проверяю делится ли число на 3 (оно делится если сумма цифр кратна трем) если делится то в общий список
             if sum(changeable_copy_list_old_digits) % 3 == 0:
-                list_new_num.append(int(''.join([str(i) for i in changeable_copy_list_old_digits])))
+                list_new_num.append(int(''.join([str(j) for j in changeable_copy_list_old_digits])))
     # выбираю максимальное
     new_num = max(list_new_num)
     return new_num
