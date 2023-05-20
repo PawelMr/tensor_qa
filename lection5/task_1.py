@@ -53,8 +53,8 @@ test_data = [{'l': 1, 'e': 2, 't': 2, 'r': 1}, {'h': 1, 'o': 1, 'n': 1, 'd': 1, 
              {'к': 1, 'у': 1, 'р': 1, 'с': 1},
              {'ы': 1}, {'л': 2, 'о': 1}, {'к': 2, 'е': 1}
              ]
-
-for i, d in enumerate(data):
-    assert letter_stat(d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
-    print(f'Тестовый набор {d} прошёл проверку')
-print('Всё ок')
+if __name__ == "__main__":
+    for i, d in enumerate(data):
+        assert letter_stat(d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
+        print(f'Тестовый набор {d} прошёл проверку')
+    print('Всё ок')
