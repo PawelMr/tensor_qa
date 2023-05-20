@@ -94,7 +94,7 @@ class PersonInfo:
             list_number_occurrences = [value for key, value in letters_dict.items()]
             list_number_occurrences.sort(reverse=True)
             new_salary = 1337 * self.age * sum(list_number_occurrences[:3])
-        except NameError:
+        except Exception:
             new_salary = self.new_salary_2()
         return new_salary
 
