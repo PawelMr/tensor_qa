@@ -38,8 +38,8 @@ test_data = [
     "Равносторонний", "Равнобедренный", "Обычный", "Равнобедренный", "Не треугольник"
 ]
 
-
-for i, d in enumerate(data):
-    assert which_triangle(*d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
-    print(f'Тестовый набор {d} прошёл проверку')
-print('Всё ок')
+if __name__ == "__main__":
+    for i, d in enumerate(data):
+        assert which_triangle(*d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
+        print(f'Тестовый набор {d} прошёл проверку')
+    print('Всё ок')
