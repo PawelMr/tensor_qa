@@ -20,7 +20,7 @@ def all_division(*arg1):
 
 def test_positive_01():
     """
-    Проверка деления нуля на число
+    Проверка деления ноля на число
     """
     result = all_division(0, 1, 1)
     assert result == 0, f"при делении 0 на число в результате ожидаем ноль \n" \

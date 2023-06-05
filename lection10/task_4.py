@@ -16,7 +16,7 @@ class Test:
 
     def test_02(self):
         """
-        проверка математики
+        проверка логики
         """
         a = True
         b = False
