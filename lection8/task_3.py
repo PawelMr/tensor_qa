@@ -10,9 +10,9 @@
 def segment(point1, point2):
     """
     вычисление суммы всех координат двух точек
-    :param point1:
-    :param point2:
-    :return:
+    :param point1: координаты точки 1
+    :param point2: координаты точки 2
+    :return: сумма всех координат переданных точек
     """
     try:
         sum_coordinates = point1[0]+point1[1]+point2[0]+point2[1]
