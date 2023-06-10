@@ -20,8 +20,8 @@ import unittest  # Не удалять
 def treatment_sum(our_tuple):
     """
     функция вычисления суммы элементов кортежа длинна которого 2
-    :param our_tuple:
-    :return:
+    :param our_tuple: кортеж из двух чисел (при несоответствии падение ошибки)
+    :return: сумма элементов переданного кортежа
     """
     if len(our_tuple) > 2:
         raise Exception('Много данных')
