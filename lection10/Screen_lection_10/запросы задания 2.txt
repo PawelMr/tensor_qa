@@ -1,3 +1,0 @@
-pytest task_2.py -v
-pytest task_2.py -v -m smoke
-pytest task_2.py -k test_positive -v
