@@ -39,7 +39,8 @@ class Segment:
 
     def y_axis_intersection(self):
         """
-        Функция определяет: пересекает ли отрезок ось ординат
+        Функция определяет:
+        пересекает ли отрезок ось ординат
         :return: bool значение
         """
         return True if (self.point_1[1]*self.point_2[1]) <= 0 else False
